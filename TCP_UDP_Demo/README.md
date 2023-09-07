@@ -31,3 +31,20 @@ När anslutningen har gjorts och datat skickats, stängs klienten och strömmen 
 För att kunna skicka ett meddelande till *MyUDPServer* behövs en klient. Klassen *MyUDPClient* skapar en klient.
 Denna klienten kommer koppla upp sig till den lokala ip addressen. Ingen ström skapas och datat skickas direkt.
 Efter anslutningen med klient och server har gjorts samt data har skickats, stängs av klienten.
+
+#Program.cs
+Vi skapar instanser av UDP- och TCP Server samt dess klienter.
+Inuti konsol kommer ett meddelande med alternativ för använder över vilka servrar samt klienter kommer köras.
+En While-loop som kommer konstant köras medans applikationen körs.
+Inuti while-loopen skapas en variabel för att läsa användarens tangenttryck för övre konsol meddelandets val.
+Switch-loopen läser av användarens knapptryck och väljer rätt alternativ.
+Det finns 5 alternativ inuti switch loopen och en default ifall användaren skriv in ett alternativ som inte finns i listan.
+Det finns alternativ att starta udp och tcp server, starta klienter som kommer skicka ett förskriv meddelande och ett alternativ att börja om.
+
+
+#Serverapplikationen har driftsatts med hjälp av Microsoft Azure tjänster.
+- Resursgrupp: TCPUDPDemoRG
+- Abonnemangstyp: 
+- Storlek : S1
+- Webbjobb: TCP_UDP_Demo
+- Plats: Centrala Sverige
